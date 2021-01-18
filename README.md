@@ -39,10 +39,13 @@
 -----------------
 **Regras**: 
     1-  precisa começar com uma letra (pode terminar com um número). 
+
     2- Não pode começar com simbolo ou caractere special tipo @#$% . 
         Ex: `var ^a`
+
     3- Não pode começar com '$' or '_' (sublinhado)
-    4- JS e  Casesensitive então há diferença entre digitar maiuscula e minuscula.  , 
+
+    4- JS e  Casesensitive então há diferença entre digitar maiuscula e minuscula.  
         Ex: `var CASE` e diferente do que `var case`  então use `firsCase` para nomes grandes
 
 **var**: Armazena valores em memória, também pode conter qualquer tipo do JS, você pode reatribuir um valor. 
@@ -64,8 +67,10 @@
 -----------------
 **if**:  Serve condições "if" ou "se" para fazer algo.
         Ex: `if(conditions) {}`.
+
 **else** :  Serve para uma condição oposta ao "se" ou "if" .  
         Ex: `else{something occurs}` ou `if(conditions) {} else{something occurs}`.
+
 **else if**: Serve para uma recomeçar a condição "if" apartir de uma contradição "else". 
         Ex: `else if {something}` or `if(conditions) {} else if {something occurs}`.
 
@@ -78,8 +83,11 @@
 -----------------
 
 **&&:** Siginifica "and" no JS
+
 **||:**  Siginifica "or" no JS
+
 **ReferenceError**: E um erro do JS , e como se ele estivesse te falando : "Não sei qual é este valor, não está se referindo a nada"
+
 **!:** Siginifica "not" no JS, 
     Ex: `if (!(name === "Null"))...`
 
@@ -91,18 +99,22 @@
 São peças de código, que executam ações, podemos utilizar as funções JS ou criar as nossas próprias (também podemos chamá-las a qualquer momento como quisermos). a () significa executar (chamar) a função `alert()`.
 
 **argumentos**: são as coisas dentro de () quando uma função é chamada de `alert("Oi") `.
+
 **console.log():** Serve para mostrar retornos de variaveis ou funções no console do navegador ou terminal.   
 
 - Expressão de função:  
     Ex: `var a = function name() { return} `
+
 - Função anonima: 
     Ex:`var name = function( ) {return)}:` 
+
 - Declaração da função : 
     Ex: `function name() { return}  : `
 
 return: Diz o que o resultado da função é , além disso nós permite usar o valor dessa função fora dela .
    
 <!-- () => (new in ECMAScript 6) --> Abordarei Arrow function futuramente. 
+
 **Parametros de uma função**: Adiciona parâmetros para você não se repetir, isto é "variáveis" que armazenam os valores submetidos quando você chama a função e passa o argumento.  
 
             ```
@@ -114,40 +126,54 @@ return: Diz o que o resultado da função é , além disso nós permite usar o v
 -----------------
 São formas de armazenamento de dados.
 
-**Array** : representar por [] é uma lista de dados/elementos. Para acessar um valor, chame para o nome da lista e informe a posição dentro [] , dica: sempre faça arrays com apenas um tipo,
+**Array** : representar por [] é uma lista de dados/elementos. Para acessar um valor, chame para o nome da lista e informe a posição dentro [] , dica: sempre faça arrays com apenas um tipo.
+
          Ex: like  `var list = ["tiger","car"..]; list[1]`
-                    index: são o número de comprimento/posição de uma matriz 
-        Obs1: arrays precisam estar em variáveis ou as mudanças neles não serão validas;  
-        Obs2: Há métodos/funções de array que criam uma nova lista como concat e outros que modificam a atual como pop ou shift.
-        Obs3: Para acessar um objeto dentro de um array use:
-                `arrayName[position].objectPropertie` like `database[0].username`
+
+        index: são o número de comprimento/posição de uma matriz 
+
+Obs1: arrays precisam estar em variáveis ou as mudanças neles não serão validas;  
+
+Obs2: Há métodos/funções de array que criam uma nova lista como concat e outros que modificam a atual como pop ou shift.
+
+Obs3: Para acessar um objeto dentro de um array use:
+    `arrayName[position].objectPropertie` like `database[0].username`
+
 ### Quais tipos de dados um Array pode armazenar ? 
 string.booleans,numbers,functions , ou todos misturados (embora seja recomendado usar apenas um tipo) , ou podemos adicionar um array dentro de outro. 
         Ex: `list[0][2]`
          
 **Object**: Podemos ter propriedades e valores, usamos para armazenar informações de um objeto (algo importante como usuários, compromissos, tipos de algo , etc.):  
+
  Ex: `objectName.propertieName` like `user.name`:  `var user = { properties:value,... } `
-            #- Para adicionar novas propriedades use: 
+
+#- Para adicionar novas propriedades use: 
                 `objectName.newPropertieName = value` como em  `user.favouriteFood = "spinach`.
-            #- Para alterar valores use: 
+
+#- Para alterar valores use: 
                 `objectName.newPropertieName = value`
-             #-Podemos adicionar funções dentro de objetos , mas elas agora serão chamadas de metodos.      
+#-Podemos adicionar funções dentro de objetos , mas elas agora serão chamadas de metodos.      
                  `shout: function() { console.log("Welcome to League of Draven")} `
-            #- Podemos adicionar Arrays em Objetos e Objetos dentro de Arrays. 
+
+#- Podemos adicionar Arrays em Objetos e Objetos dentro de Arrays. 
                 `var list = [ { username="kayle"}]`
-                Acessando dados de um array dentro do objeto : 
-                   object -> array: `user.spells[1]`
-                 Acessando dados de um objeto dentro do array : 
-                   array -> object: `list[0].password`
-            #- Uma função dentro de um objeto é um "método", como
-             `user.shout()`;
-            #- Podemos ter Arrays ou objetos vazios 
-                Ex: `var user = {}` ou `var user = []`
+
+Acessando dados de um array dentro do objeto : 
+        object -> array: `user.spells[1]`
+
+Acessando dados de um objeto dentro do array : 
+        array -> object: `list[0].password`
+
+#- Uma função dentro de um objeto é um "método", como `user.shout()`;
+
+#- Podemos ter Arrays ou objetos vazios 
+Ex: `var user = {}` ou `var user = []`
+
 ## JAVASCRIPT Loops
 -----------------
 **for**: executar um loop, dependendo de uma condição. 
-        Ex: `for (var i=0; i < todos.length; i++){}`
-        ++ :  use para incrementar um valor em  +1 
+Ex: `for (var i=0; i < todos.length; i++){}`
+    ++ :  use para incrementar um valor em  +1 
 
 **while**: é o mesmo de "for" mas o contador está fora da função e verifica a condição primeiro  do que  o "do while".  
 
@@ -169,7 +195,9 @@ string.booleans,numbers,functions , ou todos misturados (embora seja recomendado
         ```
 **forEach**: 
     Isto executa algo para cada item de um Array, portanto devemos coloar as ações que podemos fazer na função. 
-    1- argumento : È cada item desse Array 
+
+    1- argumento : È cada item desse Array.
+
     2- argumento : È o índice desse item. 
 
     Obs:  Podemos fazer uma função fora de um forEach e colocá-lo dentro dele para manipular mais facilmente as informações. 
