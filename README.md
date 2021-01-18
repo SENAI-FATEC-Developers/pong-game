@@ -13,20 +13,28 @@
     ```  
 
 2- **String**: é a tipagem de texto , use "" ou ''' para informar que algo é string. 
-    Ex: `"Kayle" + "VII"`
-        #- Concatenação: number + string = string. `10 + ""20" = "1020"`
-        #- NaN: Não é um numero
+Ex: `"Kayle" + "VII"`
 
-3- **Boolean**: Siginifica apenas True or False ,  pode ser usado também 0 ou 1 para representa-los no codigo. 
-    `3 > 2 -> True`
-        #- Diferenças dos simbolos "=":
-        #- Para igualdade use: == . `3==3 -> true`
-        #-  Para igualdade de valor e tipo: === . `3===3 -> true`
-        #- Para negação da igualdade ( não é igual): !== . `3 !== 3 -> false`
-        #- Simbolos de comparação , maior , menor etc: >= , <= , < , > 
+#- Concatenação: number + string = string. `10 + ""20" = "1020"`
+
+ #- NaN: Não é um numero
+
+3. **Boolean**: Siginifica apenas True or False ,  pode ser usado também 0 ou 1 para representa-los no codigo. 
+Ex:  `3 > 2 -> True`
+
+#- Diferenças dos simbolos "=":
+
+#- Para igualdade use: == . `3==3 -> true`
+
+#-  Para igualdade de valor e tipo: === . `3===3 -> true`
+
+#- Para negação da igualdade ( não é igual): !== . `3 !== 3 -> false`
+
+#- Simbolos de comparação , maior , menor etc: >= , <= , < , > 
+
 
 4. **Undefined**: Significa que a variável não foi atribuída ou que não retornamos algo em uma função.
-5. **Null**: diz que um objeto é nulo, significa que isso não é nada no objeto.
+5. **Null**: diz que um objeto é nulo, significa que isso não tem nada no objeto. 
 6. **Symbol** : è um novo recurso não é muito usado mas depois pretendo coloca-lo. 
 
 7. **Object** :  São coleção de propriedades , usando a logica "chave - valor" 
@@ -51,7 +59,8 @@
 **var**: Armazena valores em memória, também pode conter qualquer tipo do JS, você pode reatribuir um valor. 
 
 **semicolon** ";" :  siginifica o fim de uma expressão.
-            #$- Expression:  è um fragmento de codigo que produz um valor.  
+
+#$- Expression:  è um fragmento de codigo que produz um valor.  
 
 **=:** `var sa = 3` adiciona 3 ao sa,  não pode começãr com um numero. 
 
@@ -66,13 +75,15 @@
 ## Condicionais JAVASCRIPT 
 -----------------
 **if**:  Serve condições "if" ou "se" para fazer algo.
-        Ex: `if(conditions) {}`.
+Ex: `if(conditions) {}`.
 
 **else** :  Serve para uma condição oposta ao "se" ou "if" .  
-        Ex: `else{something occurs}` ou `if(conditions) {} else{something occurs}`.
+
+Ex: `else{something occurs}` ou `if(conditions) {} else{something occurs}`.
 
 **else if**: Serve para uma recomeçar a condição "if" apartir de uma contradição "else". 
-        Ex: `else if {something}` or `if(conditions) {} else if {something occurs}`.
+
+Ex: `else if {something}` or `if(conditions) {} else if {something occurs}`.
 
     Abordarei mais tarde:
     <!-- ternary operator --> : 
@@ -89,7 +100,8 @@
 **ReferenceError**: E um erro do JS , e como se ele estivesse te falando : "Não sei qual é este valor, não está se referindo a nada"
 
 **!:** Siginifica "not" no JS, 
-    Ex: `if (!(name === "Null"))...`
+
+ Ex: `if (!(name === "Null"))...`
 
 # Funções do JAVASCRIPT  
 -----------------
@@ -115,6 +127,7 @@ return: Diz o que o resultado da função é , além disso nós permite usar o v
    
 <!-- () => (new in ECMAScript 6) --> Abordarei Arrow function futuramente. 
 
+
 **Parametros de uma função**: Adiciona parâmetros para você não se repetir, isto é "variáveis" que armazenam os valores submetidos quando você chama a função e passa o argumento.  
 
             ```
@@ -126,7 +139,7 @@ return: Diz o que o resultado da função é , além disso nós permite usar o v
 -----------------
 São formas de armazenamento de dados.
 
-**Array** : representar por [] é uma lista de dados/elementos. Para acessar um valor, chame para o nome da lista e informe a posição dentro [] , dica: sempre faça arrays com apenas um tipo.
+**Array** : representa por [] é uma lista de dados/elementos. Para acessar um valor, chame para o nome da lista e informe a posição dentro [] , dica: sempre faça arrays com apenas um tipo.
 
          Ex: like  `var list = ["tiger","car"..]; list[1]`
 
@@ -137,9 +150,9 @@ Obs1: arrays precisam estar em variáveis ou as mudanças neles não serão vali
 Obs2: Há métodos/funções de array que criam uma nova lista como concat e outros que modificam a atual como pop ou shift.
 
 Obs3: Para acessar um objeto dentro de um array use:
-    `arrayName[position].objectPropertie` like `database[0].username`
+    `arrayName[position].objectPropertie` como em `database[0].username`
 
-### Quais tipos de dados um Array pode armazenar ? 
+**Quais tipos de dados um Array pode armazenar ?**
 string.booleans,numbers,functions , ou todos misturados (embora seja recomendado usar apenas um tipo) , ou podemos adicionar um array dentro de outro. 
         Ex: `list[0][2]`
          
@@ -148,12 +161,16 @@ string.booleans,numbers,functions , ou todos misturados (embora seja recomendado
  Ex: `objectName.propertieName` like `user.name`:  `var user = { properties:value,... } `
 
 #- Para adicionar novas propriedades use: 
-                `objectName.newPropertieName = value` como em  `user.favouriteFood = "spinach`.
+
+`objectName.newPropertieName = value` como em  `user.favouriteFood = "spinach`.
 
 #- Para alterar valores use: 
-                `objectName.newPropertieName = value`
+
+`objectName.newPropertieName = value`
+
 #-Podemos adicionar funções dentro de objetos , mas elas agora serão chamadas de metodos.      
-                 `shout: function() { console.log("Welcome to League of Draven")} `
+
+`shout: function() { console.log("Welcome to League of Draven")} `
 
 #- Podemos adicionar Arrays em Objetos e Objetos dentro de Arrays. 
                 `var list = [ { username="kayle"}]`
@@ -172,7 +189,9 @@ Ex: `var user = {}` ou `var user = []`
 ## JAVASCRIPT Loops
 -----------------
 **for**: executar um loop, dependendo de uma condição. 
+
 Ex: `for (var i=0; i < todos.length; i++){}`
+
     ++ :  use para incrementar um valor em  +1 
 
 **while**: é o mesmo de "for" mas o contador está fora da função e verifica a condição primeiro  do que  o "do while".  
