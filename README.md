@@ -15,22 +15,22 @@
 2- **String**: é a tipagem de texto , use "" ou ''' para informar que algo é string. 
 Ex: `"Kayle" + "VII"`
 
-#- Concatenação: number + string = string. `10 + ""20" = "1020"`
+        #- Concatenação: number + string = string. `10 + ""20" = "1020"`
 
- #- NaN: Não é um numero
+        #- NaN: Não é um numero
 
 3. **Boolean**: Siginifica apenas True or False ,  pode ser usado também 0 ou 1 para representa-los no codigo. 
 Ex:  `3 > 2 -> True`
 
-#- Diferenças dos simbolos "=":
+        #- Diferenças dos simbolos "=":
 
-#- Para igualdade use: == . `3==3 -> true`
+        #- Para igualdade use: == . `3==3 -> true`
 
-#-  Para igualdade de valor e tipo: === . `3===3 -> true`
+        #-  Para igualdade de valor e tipo: === . `3===3 -> true`
 
-#- Para negação da igualdade ( não é igual): !== . `3 !== 3 -> false`
+        #- Para negação da igualdade ( não é igual): !== . `3 !== 3 -> false`
 
-#- Simbolos de comparação , maior , menor etc: >= , <= , < , > 
+        #- Simbolos de comparação , maior , menor etc: >= , <= , < , > 
 
 
 4. **Undefined**: Significa que a variável não foi atribuída ou que não retornamos algo em uma função.
