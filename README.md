@@ -1,5 +1,7 @@
+# Conhecimentos basicos de Javascript
 
-# Tipos primitivos do JAVASCRIPT
+
+## Tipos primitivos do JAVASCRIPT
 -----------------
 
 1- **Number**: é o número e podemos fazer operações sobre eles.      
@@ -33,7 +35,7 @@
 **Comparadores JAVASCRIPT**
     !== , === , >= ,<= ,> , <
 
-# Variaveis JAVASCRIPT
+## Variaveis JAVASCRIPT
 -----------------
 **Regras**: 
     1-  precisa começar com uma letra (pode terminar com um número). 
@@ -72,7 +74,7 @@
     <!-- switch -->
 
 
-# Operadores logicos do JAVASCRIPT 
+## Operadores logicos do JAVASCRIPT 
 -----------------
 
 **&&:** Siginifica "and" no JS
@@ -83,6 +85,7 @@
 
 # Funções do JAVASCRIPT  
 -----------------
+
 ## O que são funções 
 
 São peças de código, que executam ações, podemos utilizar as funções JS ou criar as nossas próprias (também podemos chamá-las a qualquer momento como quisermos). a () significa executar (chamar) a função `alert()`.
@@ -107,7 +110,7 @@ return: Diz o que o resultado da função é , além disso nós permite usar o v
                 sing("Legend's never die , they become...") 
             ```
 
-# Estrutura de  dados do JAVASCRIPT 
+## Estrutura de  dados do JAVASCRIPT 
 -----------------
 São formas de armazenamento de dados.
 
@@ -118,7 +121,7 @@ São formas de armazenamento de dados.
         Obs2: Há métodos/funções de array que criam uma nova lista como concat e outros que modificam a atual como pop ou shift.
         Obs3: Para acessar um objeto dentro de um array use:
                 `arrayName[position].objectPropertie` like `database[0].username`
-## Quais tipos de dados um Array pode armazenar ? 
+### Quais tipos de dados um Array pode armazenar ? 
 string.booleans,numbers,functions , ou todos misturados (embora seja recomendado usar apenas um tipo) , ou podemos adicionar um array dentro de outro. 
         Ex: `list[0][2]`
          
@@ -140,7 +143,7 @@ string.booleans,numbers,functions , ou todos misturados (embora seja recomendado
              `user.shout()`;
             #- Podemos ter Arrays ou objetos vazios 
                 Ex: `var user = {}` ou `var user = []`
-# JAVASCRIPT Loops
+## JAVASCRIPT Loops
 -----------------
 **for**: executar um loop, dependendo de uma condição. 
         Ex: `for (var i=0; i < todos.length; i++){}`
